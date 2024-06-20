@@ -24,6 +24,7 @@ questions = [
     ("Как вы оцениваете ваше общее состояние здоровья?", GENERAL_HEALTH)
 ]
 
+
 # Функция для сохранения ответов в docx
 def save_response(user_data):
     try:
@@ -39,6 +40,7 @@ def save_response(user_data):
         logger.error(f"Не удалось сохранить ответы: {e}")
         return None
 
+
 # Начало опроса
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     logger.info(f"Пользователь {update.message.from_user.id} начал опрос.")
@@ -48,11 +50,13 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     )
     return FIO
 
+
 # Обработка ввода ФИО
 async def fio(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     context.user_data['Пожалуйста, введите ваше ФИО:'] = update.message.text
     await update.message.reply_text("Введите вашу дату рождения:")
     return DOB
+
 
 # Обработка ввода даты рождения
 async def dob(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
@@ -60,11 +64,13 @@ async def dob(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     await update.message.reply_text("Введите дату заполнения анкеты:")
     return DATE
 
+
 # Обработка ввода даты заполнения анкеты
 async def date(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     context.user_data['Введите дату заполнения анкеты:'] = update.message.text
     await update.message.reply_text("С чем связано ваше обращение?")
     return REASON
+
 
 # Обработка ввода причины обращения
 async def reason(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
@@ -72,11 +78,13 @@ async def reason(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     await update.message.reply_text("Откуда вы узнали о докторе?")
     return SOURCE
 
+
 # Обработка ввода источника информации
 async def source(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     context.user_data['Откуда вы узнали о докторе?'] = update.message.text
     await update.message.reply_text("Введите ваш рост (см):")
     return HEIGHT
+
 
 # Обработка ввода роста
 async def height(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
@@ -84,11 +92,13 @@ async def height(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     await update.message.reply_text("Введите объем талии (см):")
     return WAIST
 
+
 # Обработка ввода объема талии
 async def waist(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     context.user_data['Введите объем талии (см):'] = update.message.text
     await update.message.reply_text("Введите объем бедер (см):")
     return HIPS
+
 
 # Обработка ввода объема бедер
 async def hips(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
@@ -98,6 +108,7 @@ async def hips(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
                                         [['Очень хорошее', 'Хорошее', 'Удовлетворительное', 'Плохое', 'Очень плохое']],
                                         one_time_keyboard=True))
     return GENERAL_HEALTH
+
 
 # Обработка ввода общего состояния здоровья
 async def general_health(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
@@ -114,11 +125,13 @@ async def general_health(update: Update, context: ContextTypes.DEFAULT_TYPE) -> 
 
     return ConversationHandler.END
 
+
 # Отмена опроса
 async def cancel(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     await update.message.reply_text('Анкета отменена.', reply_markup=ReplyKeyboardRemove())
     logger.info(f"Пользователь {update.message.from_user.id} отменил опрос.")
     return ConversationHandler.END
+
 
 # Добавление нового вопроса (только для администраторов)
 async def add_question(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
@@ -128,6 +141,7 @@ async def add_question(update: Update, context: ContextTypes.DEFAULT_TYPE) -> in
     await update.message.reply_text("Введите текст нового вопроса:")
     return NEW_QUESTION
 
+
 # Сохранение нового вопроса (только для администраторов)
 async def save_question(update: Update, context: ContextTypes.DEFAULT_TYPE) -> int:
     new_question = update.message.text
@@ -136,6 +150,7 @@ async def save_question(update: Update, context: ContextTypes.DEFAULT_TYPE) -> i
     await update.message.reply_text(f"Вопрос добавлен: {new_question}")
     logger.info(f"Администратор {update.message.from_user.id} добавил новый вопрос: {new_question}")
     return ConversationHandler.END
+
 
 # Отправка ответов администраторам через 2 минуты
 async def send_responses_to_admins(application, filename):
