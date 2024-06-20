@@ -4,7 +4,8 @@ from telegram import BotCommand
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ConversationHandler, ContextTypes
 from handlers import (
     start, fio, dob, date, reason, source, height, waist, hips, general_health,
-    cancel, add_question, save_question, FIO, DOB, DATE, REASON, SOURCE, HEIGHT, WAIST, HIPS, GENERAL_HEALTH, NEW_QUESTION
+    cancel, add_question, save_question, FIO, DOB, DATE, REASON, SOURCE, HEIGHT, WAIST, HIPS, GENERAL_HEALTH,
+    NEW_QUESTION
 )
 
 # Настройка логирования
@@ -18,6 +19,7 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+
 # Определение команд бота
 async def set_commands(application: Application) -> None:
     commands = [
@@ -25,6 +27,7 @@ async def set_commands(application: Application) -> None:
         BotCommand("add_question", "Добавить новый вопрос"),
     ]
     await application.bot.set_my_commands(commands)
+
 
 async def main() -> None:
     # Создание приложения Telegram Bot
@@ -59,15 +62,17 @@ async def main() -> None:
     logger.info("Бот запущен.")
     await application.start()
     logger.info("Polling запущен.")
-    await application.updater.start_polling()
+
+    # Используем встроенный метод run_polling для запуска и ожидания
+    await application.run_polling()
 
     # Останавливаем бота при завершении
-    await application.updater.stop()
     await application.stop()
     logger.info("Бот остановлен.")
 
+
 if __name__ == '__main__':
-    loop = asyncio.get_event_loop()
+    loop = asyncio.get_running_loop()
     try:
         loop.run_until_complete(main())
     except KeyboardInterrupt:

@@ -45,3 +45,15 @@
 2024-06-20 14:57:59,474 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
 2024-06-20 14:57:59,475 - telegram.ext.Application - INFO - Application.stop() complete
 2024-06-20 14:57:59,475 - __main__ - INFO - Bot stopped.
+2024-06-20 16:27:01,874 - httpx - INFO - HTTP Request: POST https://api.telegram.org/botYOUR_TELEGRAM_BOT_TOKEN/setMyCommands "HTTP/1.1 404 Not Found"
+2024-06-20 16:42:46,405 - httpx - INFO - HTTP Request: POST https://api.telegram.org/botYOUR_TELEGRAM_BOT_TOKEN/setMyCommands "HTTP/1.1 404 Not Found"
+2024-06-20 16:44:08,609 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/setMyCommands "HTTP/1.1 200 OK"
+2024-06-20 16:44:08,765 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/getMe "HTTP/1.1 200 OK"
+2024-06-20 16:44:08,766 - __main__ - INFO - Бот запущен.
+2024-06-20 16:44:08,766 - telegram.ext.Application - INFO - Application started
+2024-06-20 16:44:08,767 - __main__ - INFO - Polling запущен.
+2024-06-20 16:44:08,929 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/deleteWebhook "HTTP/1.1 200 OK"
+2024-06-20 16:44:09,672 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/getUpdates "HTTP/1.1 200 OK"
+2024-06-20 16:44:09,672 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2024-06-20 16:44:09,673 - telegram.ext.Application - INFO - Application.stop() complete
+2024-06-20 16:44:09,673 - __main__ - INFO - Бот остановлен.
