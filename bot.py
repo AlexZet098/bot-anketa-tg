@@ -1,11 +1,11 @@
 import logging
 import asyncio
+import nest_asyncio
 from telegram import BotCommand
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ConversationHandler, ContextTypes
 from handlers import (
     start, fio, dob, date, reason, source, height, waist, hips, general_health,
-    cancel, add_question, save_question, FIO, DOB, DATE, REASON, SOURCE, HEIGHT, WAIST, HIPS, GENERAL_HEALTH,
-    NEW_QUESTION
+    cancel, add_question, save_question, FIO, DOB, DATE, REASON, SOURCE, HEIGHT, WAIST, HIPS, GENERAL_HEALTH, NEW_QUESTION
 )
 
 # Настройка логирования
@@ -19,7 +19,6 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-
 # Определение команд бота
 async def set_commands(application: Application) -> None:
     commands = [
@@ -27,7 +26,6 @@ async def set_commands(application: Application) -> None:
         BotCommand("add_question", "Добавить новый вопрос"),
     ]
     await application.bot.set_my_commands(commands)
-
 
 async def main() -> None:
     # Создание приложения Telegram Bot
@@ -64,18 +62,11 @@ async def main() -> None:
     logger.info("Polling запущен.")
 
     # Используем встроенный метод run_polling для запуска и ожидания
-    await application.run_polling()
-
-    # Останавливаем бота при завершении
-    await application.stop()
-    logger.info("Бот остановлен.")
-
+    await application.updater.start_polling()
 
 if __name__ == '__main__':
-    loop = asyncio.get_running_loop()
+    nest_asyncio.apply()
     try:
-        loop.run_until_complete(main())
+        asyncio.run(main())
     except KeyboardInterrupt:
         logger.info("Бот остановлен пользователем.")
-    finally:
-        loop.close()
