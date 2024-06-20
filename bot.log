@@ -1,0 +1,7 @@
+2024-06-20 13:39:12,334 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/setMyCommands "HTTP/1.1 200 OK"
+2024-06-20 13:39:12,487 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/getMe "HTTP/1.1 200 OK"
+2024-06-20 13:39:12,487 - telegram.ext.Application - INFO - Application started
+2024-06-20 13:39:12,488 - __main__ - INFO - Bot started.
+2024-06-20 13:39:12,639 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/deleteWebhook "HTTP/1.1 200 OK"
+2024-06-20 13:39:12,639 - __main__ - INFO - Polling started.
+2024-06-20 13:39:12,639 - __main__ - ERROR - Ошибка запуска цикла событий: 'Updater' object has no attribute 'idle'
