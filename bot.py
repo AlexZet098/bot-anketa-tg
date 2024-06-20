@@ -11,7 +11,7 @@ from handlers import (
 TOKEN = '7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k'
 ADMIN_IDS = ['1056118643', '427264609']
 
-# Настройка логирования
+# Настройка логирования1
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     level=logging.INFO,
