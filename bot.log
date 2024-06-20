@@ -116,3 +116,100 @@ task: <Task pending name='Application:7112103187:update_fetcher' coro=<Applicati
 2024-06-20 17:26:35,611 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
 2024-06-20 17:26:35,612 - telegram.ext.Application - INFO - Application.stop() complete
 2024-06-20 17:26:35,612 - __main__ - INFO - Бот остановлен.
+2024-06-20 17:33:19,344 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/setMyCommands "HTTP/1.1 200 OK"
+2024-06-20 17:33:19,501 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/getMe "HTTP/1.1 200 OK"
+2024-06-20 17:33:19,502 - __main__ - INFO - Бот запущен.
+2024-06-20 17:33:19,502 - telegram.ext.Application - INFO - Application started
+2024-06-20 17:33:19,502 - __main__ - INFO - Polling запущен.
+2024-06-20 17:33:19,653 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/deleteWebhook "HTTP/1.1 200 OK"
+2024-06-20 17:33:19,682 - asyncio - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Application:7112103187:update_fetcher' coro=<Application._update_fetcher() running at D:\Dev\TG\venv\Lib\site-packages\telegram\ext\_application.py:1248> wait_for=<Future pending cb=[Task.__wakeup()]>>
+2024-06-20 17:33:19,683 - asyncio - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Updater:start_polling:polling_task' coro=<Updater._network_loop_retry() running at D:\Dev\TG\venv\Lib\site-packages\telegram\ext\_updater.py:706>>
+2024-06-20 17:34:56,948 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/setMyCommands "HTTP/1.1 200 OK"
+2024-06-20 17:34:57,101 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/getMe "HTTP/1.1 200 OK"
+2024-06-20 17:34:57,102 - __main__ - INFO - Бот запущен.
+2024-06-20 17:34:57,102 - telegram.ext.Application - INFO - Application started
+2024-06-20 17:34:57,102 - __main__ - INFO - Polling запущен.
+2024-06-20 17:34:57,278 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/deleteWebhook "HTTP/1.1 200 OK"
+2024-06-20 17:34:57,321 - asyncio - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Updater:start_polling:polling_task' coro=<Updater._network_loop_retry() running at D:\Dev\TG\venv\Lib\site-packages\telegram\ext\_updater.py:706>>
+2024-06-20 17:34:57,321 - asyncio - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Application:7112103187:update_fetcher' coro=<Application._update_fetcher() running at D:\Dev\TG\venv\Lib\site-packages\telegram\ext\_application.py:1248> wait_for=<Future pending cb=[Task.__wakeup()]>>
+2024-06-20 17:37:56,329 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/setMyCommands "HTTP/1.1 200 OK"
+2024-06-20 17:37:56,483 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/getMe "HTTP/1.1 200 OK"
+2024-06-20 17:37:56,483 - __main__ - INFO - Бот запущен.
+2024-06-20 17:37:56,484 - telegram.ext.Application - INFO - Application started
+2024-06-20 17:37:56,484 - __main__ - INFO - Polling запущен.
+2024-06-20 17:37:56,632 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/deleteWebhook "HTTP/1.1 200 OK"
+2024-06-20 17:37:56,662 - asyncio - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Updater:start_polling:polling_task' coro=<Updater._network_loop_retry() running at D:\Dev\TG\venv\Lib\site-packages\telegram\ext\_updater.py:706>>
+2024-06-20 17:37:56,662 - asyncio - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Application:7112103187:update_fetcher' coro=<Application._update_fetcher() running at D:\Dev\TG\venv\Lib\site-packages\telegram\ext\_application.py:1248> wait_for=<Future pending cb=[Task.__wakeup()]>>
+2024-06-20 17:40:19,976 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/setMyCommands "HTTP/1.1 200 OK"
+2024-06-20 17:40:20,151 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/getMe "HTTP/1.1 200 OK"
+2024-06-20 17:40:20,154 - __main__ - INFO - Бот запущен.
+2024-06-20 17:40:20,155 - telegram.ext.Application - INFO - Application started
+2024-06-20 17:40:20,155 - __main__ - INFO - Polling запущен.
+2024-06-20 17:40:20,306 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/deleteWebhook "HTTP/1.1 200 OK"
+2024-06-20 17:44:01,870 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/setMyCommands "HTTP/1.1 200 OK"
+2024-06-20 17:44:02,027 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/getMe "HTTP/1.1 200 OK"
+2024-06-20 17:44:02,028 - __main__ - INFO - Бот запущен.
+2024-06-20 17:44:02,028 - telegram.ext.Application - INFO - Application started
+2024-06-20 17:44:02,028 - __main__ - INFO - Polling запущен.
+2024-06-20 17:44:02,177 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/deleteWebhook "HTTP/1.1 200 OK"
+2024-06-20 17:44:02,178 - __main__ - INFO - Бот остановлен.
+2024-06-20 17:44:02,209 - asyncio - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Updater:start_polling:polling_task' coro=<Updater._network_loop_retry() running at D:\Dev\TG\venv\Lib\site-packages\telegram\ext\_updater.py:706>>
+2024-06-20 17:44:02,210 - asyncio - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Application:7112103187:update_fetcher' coro=<Application._update_fetcher() running at D:\Dev\TG\venv\Lib\site-packages\telegram\ext\_application.py:1248> wait_for=<Future pending cb=[Task.__wakeup()]>>
+2024-06-20 17:45:47,047 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/setMyCommands "HTTP/1.1 200 OK"
+2024-06-20 17:45:47,197 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/getMe "HTTP/1.1 200 OK"
+2024-06-20 17:45:47,197 - __main__ - INFO - Бот запущен.
+2024-06-20 17:45:47,197 - telegram.ext.Application - INFO - Application started
+2024-06-20 17:45:47,197 - __main__ - INFO - Polling запущен.
+2024-06-20 17:45:47,347 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/deleteWebhook "HTTP/1.1 200 OK"
+2024-06-20 17:45:49,148 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/getUpdates "HTTP/1.1 200 OK"
+2024-06-20 17:45:49,150 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2024-06-20 17:45:49,151 - telegram.ext.Application - INFO - Application.stop() complete
+2024-06-20 17:45:49,151 - __main__ - INFO - Бот остановлен.
+2024-06-20 17:45:49,152 - __main__ - INFO - Бот остановлен.
+2024-06-20 17:48:30,447 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/setMyCommands "HTTP/1.1 200 OK"
+2024-06-20 17:48:30,603 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/getMe "HTTP/1.1 200 OK"
+2024-06-20 17:48:30,604 - __main__ - INFO - Бот запущен.
+2024-06-20 17:48:30,604 - telegram.ext.Application - INFO - Application started
+2024-06-20 17:48:30,604 - __main__ - INFO - Polling запущен.
+2024-06-20 17:48:30,755 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/deleteWebhook "HTTP/1.1 200 OK"
+2024-06-20 17:48:30,756 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2024-06-20 17:48:30,756 - telegram.ext.Application - INFO - Application.stop() complete
+2024-06-20 17:48:30,757 - __main__ - INFO - Бот остановлен.
+2024-06-20 17:48:30,757 - __main__ - INFO - Бот остановлен.
+2024-06-20 17:49:58,057 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/setMyCommands "HTTP/1.1 200 OK"
+2024-06-20 17:49:58,211 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/getMe "HTTP/1.1 200 OK"
+2024-06-20 17:49:58,212 - __main__ - INFO - Бот запущен.
+2024-06-20 17:49:58,213 - telegram.ext.Application - INFO - Application started
+2024-06-20 17:49:58,213 - __main__ - INFO - Polling запущен.
+2024-06-20 17:49:58,367 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/deleteWebhook "HTTP/1.1 200 OK"
+2024-06-20 17:49:58,368 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2024-06-20 17:49:58,368 - telegram.ext.Application - INFO - Application.stop() complete
+2024-06-20 17:49:58,369 - __main__ - INFO - Бот остановлен.
+2024-06-20 17:52:34,917 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/setMyCommands "HTTP/1.1 200 OK"
+2024-06-20 17:52:35,070 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/getMe "HTTP/1.1 200 OK"
+2024-06-20 17:52:35,071 - __main__ - INFO - Бот запущен.
+2024-06-20 17:52:35,071 - telegram.ext.Application - INFO - Application started
+2024-06-20 17:52:35,071 - __main__ - INFO - Polling запущен.
+2024-06-20 17:52:35,238 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/deleteWebhook "HTTP/1.1 200 OK"
+2024-06-20 17:52:35,238 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2024-06-20 17:52:35,239 - telegram.ext.Application - INFO - Application.stop() complete
+2024-06-20 17:52:35,241 - __main__ - INFO - Бот остановлен.
+2024-06-20 17:53:43,278 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/setMyCommands "HTTP/1.1 200 OK"
+2024-06-20 17:53:43,429 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/getMe "HTTP/1.1 200 OK"
+2024-06-20 17:53:43,430 - __main__ - INFO - Бот запущен.
+2024-06-20 17:53:43,430 - telegram.ext.Application - INFO - Application started
+2024-06-20 17:53:43,430 - __main__ - INFO - Polling запущен.
+2024-06-20 17:53:43,579 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/deleteWebhook "HTTP/1.1 200 OK"
+2024-06-20 17:53:43,580 - __main__ - INFO - Бот остановлен.
+2024-06-20 17:53:43,612 - asyncio - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Updater:start_polling:polling_task' coro=<Updater._network_loop_retry() running at D:\Dev\TG\venv\Lib\site-packages\telegram\ext\_updater.py:706>>
+2024-06-20 17:53:43,613 - asyncio - ERROR - Task was destroyed but it is pending!
+task: <Task pending name='Application:7112103187:update_fetcher' coro=<Application._update_fetcher() running at D:\Dev\TG\venv\Lib\site-packages\telegram\ext\_application.py:1248> wait_for=<Future pending cb=[Task.__wakeup()]>>
