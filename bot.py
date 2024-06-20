@@ -28,7 +28,7 @@ async def set_commands(application: Application) -> None:
 
 async def main() -> None:
     # Создание приложения Telegram Bot
-    application = Application.builder().token("YOUR_TELEGRAM_BOT_TOKEN").build()
+    application = Application.builder().token("7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k").build()
 
     # Обработчик последовательности вопросов
     conv_handler = ConversationHandler(
