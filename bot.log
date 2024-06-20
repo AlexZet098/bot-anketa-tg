@@ -5,3 +5,29 @@
 2024-06-20 13:39:12,639 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/deleteWebhook "HTTP/1.1 200 OK"
 2024-06-20 13:39:12,639 - __main__ - INFO - Polling started.
 2024-06-20 13:39:12,639 - __main__ - ERROR - Ошибка запуска цикла событий: 'Updater' object has no attribute 'idle'
+2024-06-20 14:53:03,202 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/setMyCommands "HTTP/1.1 200 OK"
+2024-06-20 14:53:03,365 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/getMe "HTTP/1.1 200 OK"
+2024-06-20 14:53:03,366 - telegram.ext.Application - INFO - Application started
+2024-06-20 14:53:03,366 - __main__ - INFO - Bot started.
+2024-06-20 14:53:03,519 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/deleteWebhook "HTTP/1.1 200 OK"
+2024-06-20 14:53:03,519 - __main__ - INFO - Polling started.
+2024-06-20 14:53:03,521 - __main__ - ERROR - Ошибка запуска цикла событий: 'Updater' object has no attribute 'idle'
+2024-06-20 14:54:19,358 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/setMyCommands "HTTP/1.1 200 OK"
+2024-06-20 14:54:19,359 - __main__ - INFO - Bot started.
+2024-06-20 14:54:19,529 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/getMe "HTTP/1.1 200 OK"
+2024-06-20 14:54:19,530 - telegram.ext.Application - INFO - Application started
+2024-06-20 14:54:19,530 - __main__ - INFO - Polling started.
+2024-06-20 14:54:19,694 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/deleteWebhook "HTTP/1.1 200 OK"
+2024-06-20 14:54:20,428 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/getUpdates "HTTP/1.1 200 OK"
+2024-06-20 14:54:20,429 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2024-06-20 14:54:20,429 - telegram.ext.Application - INFO - Application.stop() complete
+2024-06-20 14:54:20,429 - __main__ - INFO - Bot stopped.
+2024-06-20 14:56:14,004 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/setMyCommands "HTTP/1.1 200 OK"
+2024-06-20 14:56:14,005 - __main__ - INFO - Bot started.
+2024-06-20 14:56:14,158 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/getMe "HTTP/1.1 200 OK"
+2024-06-20 14:56:14,158 - telegram.ext.Application - INFO - Application started
+2024-06-20 14:56:14,159 - __main__ - INFO - Polling started.
+2024-06-20 14:56:14,310 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/deleteWebhook "HTTP/1.1 200 OK"
+2024-06-20 14:56:14,311 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2024-06-20 14:56:14,311 - telegram.ext.Application - INFO - Application.stop() complete
+2024-06-20 14:56:14,311 - __main__ - INFO - Bot stopped.

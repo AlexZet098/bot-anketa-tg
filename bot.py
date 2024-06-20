@@ -9,7 +9,7 @@ from handlers import (
 
 # Ваш токен и список ID администраторов
 TOKEN = '7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k'
-ADMIN_IDS = ['427264609', '1056118643']
+ADMIN_IDS = ['1056118643', '427264609']
 
 # Настройка логирования
 logging.basicConfig(
@@ -22,10 +22,8 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# Определение состояний для опроса
-(FIO, DOB, DATE, REASON, SOURCE, HEIGHT, WAIST, HIPS, GENERAL_HEALTH, NEW_QUESTION) = range(10)
 
-
+# Настройка команды бота
 async def set_commands(application: Application) -> None:
     commands = [
         BotCommand("start", "Начать опрос"),
@@ -36,26 +34,29 @@ async def set_commands(application: Application) -> None:
     await application.bot.set_my_commands(commands)
 
 
-async def main():
-    application = Application.builder().token(TOKEN).connect_timeout(30).read_timeout(30).build()
+async def main() -> None:
+    # Создаем приложение
+    application = Application.builder().token(TOKEN).build()
 
+    # Настраиваем обработчик разговоров
     conv_handler = ConversationHandler(
         entry_points=[CommandHandler('start', start)],
         states={
-            FIO: [MessageHandler(filters.TEXT & ~filters.COMMAND, fio)],
-            DOB: [MessageHandler(filters.TEXT & ~filters.COMMAND, dob)],
-            DATE: [MessageHandler(filters.TEXT & ~filters.COMMAND, date)],
-            REASON: [MessageHandler(filters.TEXT & ~filters.COMMAND, reason)],
-            SOURCE: [MessageHandler(filters.TEXT & ~filters.COMMAND, source)],
-            HEIGHT: [MessageHandler(filters.TEXT & ~filters.COMMAND, height)],
-            WAIST: [MessageHandler(filters.TEXT & ~filters.COMMAND, waist)],
-            HIPS: [MessageHandler(filters.TEXT & ~filters.COMMAND, hips)],
-            GENERAL_HEALTH: [MessageHandler(filters.TEXT & ~filters.COMMAND, general_health)],
-            NEW_QUESTION: [MessageHandler(filters.TEXT & ~filters.COMMAND, save_question)],
+            0: [MessageHandler(filters.TEXT & ~filters.COMMAND, fio)],
+            1: [MessageHandler(filters.TEXT & ~filters.COMMAND, dob)],
+            2: [MessageHandler(filters.TEXT & ~filters.COMMAND, date)],
+            3: [MessageHandler(filters.TEXT & ~filters.COMMAND, reason)],
+            4: [MessageHandler(filters.TEXT & ~filters.COMMAND, source)],
+            5: [MessageHandler(filters.TEXT & ~filters.COMMAND, height)],
+            6: [MessageHandler(filters.TEXT & ~filters.COMMAND, waist)],
+            7: [MessageHandler(filters.TEXT & ~filters.COMMAND, hips)],
+            8: [MessageHandler(filters.TEXT & ~filters.COMMAND, general_health)],
+            9: [MessageHandler(filters.TEXT & ~filters.COMMAND, save_question)],
         },
         fallbacks=[CommandHandler('cancel', cancel)],
     )
 
+    # Добавляем обработчики в приложение
     application.add_handler(conv_handler)
     application.add_handler(CommandHandler('add_question', add_question))
     application.add_handler(CommandHandler('send_test_file', send_test_file))
@@ -64,26 +65,20 @@ async def main():
     # Устанавливаем команды бота
     await set_commands(application)
 
-    # Запуск бота
+    # Запускаем приложение
+    logger.info("Bot started.")
     await application.initialize()
     await application.start()
-    logger.info("Bot started.")
-
-    # Запуск polling
-    await application.updater.start_polling()
     logger.info("Polling started.")
 
-    # Ожидание завершения работы
-    await application.updater.idle()
-
-    # Завершение работы приложения
-    await application.stop()
-    await application.shutdown()
+    # Используем бесконечный цикл ожидания
+    try:
+        await application.updater.start_polling()
+        await asyncio.Event().wait()  # Бесконечное ожидание
+    finally:
+        await application.stop()
+        logger.info("Bot stopped.")
 
 
 if __name__ == '__main__':
-    try:
-        loop = asyncio.get_event_loop()
-        loop.run_until_complete(main())
-    except Exception as e:
-        logger.error(f"Ошибка запуска цикла событий: {e}")
+    asyncio.run(main())
