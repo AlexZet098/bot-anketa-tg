@@ -31,3 +31,17 @@
 2024-06-20 14:56:14,311 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
 2024-06-20 14:56:14,311 - telegram.ext.Application - INFO - Application.stop() complete
 2024-06-20 14:56:14,311 - __main__ - INFO - Bot stopped.
+2024-06-20 14:57:29,675 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/setMyCommands "HTTP/1.1 200 OK"
+2024-06-20 14:57:29,677 - __main__ - INFO - Bot started.
+2024-06-20 14:57:29,865 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/getMe "HTTP/1.1 200 OK"
+2024-06-20 14:57:29,866 - telegram.ext.Application - INFO - Application started
+2024-06-20 14:57:29,866 - __main__ - INFO - Polling started.
+2024-06-20 14:57:30,021 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/deleteWebhook "HTTP/1.1 200 OK"
+2024-06-20 14:57:30,792 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/getUpdates "HTTP/1.1 200 OK"
+2024-06-20 14:57:30,793 - handlers - INFO - Пользователь 427264609 начал опрос.
+2024-06-20 14:57:31,029 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/sendMessage "HTTP/1.1 200 OK"
+2024-06-20 14:57:40,951 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/getUpdates "HTTP/1.1 200 OK"
+2024-06-20 14:57:51,109 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/getUpdates "HTTP/1.1 200 OK"
+2024-06-20 14:57:59,474 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2024-06-20 14:57:59,475 - telegram.ext.Application - INFO - Application.stop() complete
+2024-06-20 14:57:59,475 - __main__ - INFO - Bot stopped.

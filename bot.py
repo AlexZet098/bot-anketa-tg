@@ -73,7 +73,7 @@ async def main() -> None:
 
     # Используем бесконечный цикл ожидания
     try:
-        await application.updater.start_polling()
+        await application.updater.start_polling(timeout=60)  # Увеличиваем таймаут до 60 секунд
         await asyncio.Event().wait()  # Бесконечное ожидание
     finally:
         await application.stop()
