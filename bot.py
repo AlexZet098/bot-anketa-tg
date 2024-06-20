@@ -4,7 +4,7 @@ from telegram import BotCommand
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ConversationHandler
 from handlers import (
     start, fio, dob, date, reason, source, height, waist, hips, general_health,
-    cancel, add_question, save_question, get_id, send_test_file
+    cancel, add_question, save_question
 )
 
 # Ваш токен и список ID администраторов
@@ -27,9 +27,7 @@ logger = logging.getLogger(__name__)
 async def set_commands(application: Application) -> None:
     commands = [
         BotCommand("start", "Начать опрос"),
-        BotCommand("add_question", "Добавить новый вопрос"),
-        BotCommand("send_test_file", "Отправить тестовый файл (только для администраторов)"),
-        BotCommand("get_id", "Получить свой Telegram ID")
+        BotCommand("add_question", "Добавить новый вопрос")
     ]
     await application.bot.set_my_commands(commands)
 
@@ -59,8 +57,6 @@ async def main() -> None:
     # Добавляем обработчики в приложение
     application.add_handler(conv_handler)
     application.add_handler(CommandHandler('add_question', add_question))
-    application.add_handler(CommandHandler('send_test_file', send_test_file))
-    application.add_handler(CommandHandler('get_id', get_id))
 
     # Устанавливаем команды бота
     await set_commands(application)

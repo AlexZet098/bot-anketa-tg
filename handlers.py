@@ -148,20 +148,3 @@ async def send_responses_to_admins(application, filename):
             logger.info(f"Файл с ответами отправлен администратору {admin_id}")
         except Exception as e:
             logger.error(f"Не удалось отправить файл с ответами администратору {admin_id}: {e}")
-
-# Получение Telegram ID пользователя
-async def get_id(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
-    user_id = update.message.from_user.id
-    await update.message.reply_text(f"Ваш пользовательский ID: {user_id}")
-
-# Отправка тестового файла (только для администраторов)
-async def send_test_file(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
-    if str(update.message.from_user.id) in ADMIN_IDS:
-        filename = "test_file.txt"
-        with open(filename, "w") as f:
-            f.write("Это тестовый файл.")
-        with open(filename, "rb") as f:
-            await context.bot.send_document(chat_id=update.message.chat_id, document=InputFile(f), filename=filename)
-        os.remove(filename)
-    else:
-        await update.message.reply_text("У вас нет прав на выполнение этой команды.")
