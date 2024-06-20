@@ -60,13 +60,19 @@ async def main() -> None:
     logger.info("Бот запущен.")
     await application.start()
     logger.info("Polling запущен.")
-
-    # Используем встроенный метод run_polling для запуска и ожидания
     await application.updater.start_polling()
+
+    # Останавливаем бота при завершении
+    await application.updater.stop()
+    await application.stop()
+    logger.info("Бот остановлен.")
 
 if __name__ == '__main__':
     nest_asyncio.apply()
+    loop = asyncio.get_event_loop()
     try:
-        asyncio.run(main())
+        loop.run_until_complete(main())
     except KeyboardInterrupt:
         logger.info("Бот остановлен пользователем.")
+    finally:
+        loop.close()

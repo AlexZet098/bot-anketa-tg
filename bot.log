@@ -84,3 +84,35 @@ task: <Task pending name='Application:7112103187:update_fetcher' coro=<Applicati
 2024-06-20 17:10:55,027 - telegram.ext.Application - INFO - Application started
 2024-06-20 17:10:55,027 - __main__ - INFO - Polling запущен.
 2024-06-20 17:10:55,177 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/deleteWebhook "HTTP/1.1 200 OK"
+2024-06-20 17:11:24,322 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/setMyCommands "HTTP/1.1 200 OK"
+2024-06-20 17:11:24,501 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/getMe "HTTP/1.1 200 OK"
+2024-06-20 17:11:24,502 - __main__ - INFO - Бот запущен.
+2024-06-20 17:11:24,502 - telegram.ext.Application - INFO - Application started
+2024-06-20 17:11:24,502 - __main__ - INFO - Polling запущен.
+2024-06-20 17:11:24,659 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/deleteWebhook "HTTP/1.1 200 OK"
+2024-06-20 17:16:18,311 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/setMyCommands "HTTP/1.1 200 OK"
+2024-06-20 17:16:18,462 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/getMe "HTTP/1.1 200 OK"
+2024-06-20 17:16:18,463 - __main__ - INFO - Бот запущен.
+2024-06-20 17:16:18,463 - telegram.ext.Application - INFO - Application started
+2024-06-20 17:16:18,464 - __main__ - INFO - Polling запущен.
+2024-06-20 17:16:18,625 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/deleteWebhook "HTTP/1.1 200 OK"
+2024-06-20 17:24:41,602 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/setMyCommands "HTTP/1.1 200 OK"
+2024-06-20 17:24:41,761 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/getMe "HTTP/1.1 200 OK"
+2024-06-20 17:24:41,763 - __main__ - INFO - Бот запущен.
+2024-06-20 17:24:41,763 - telegram.ext.Application - INFO - Application started
+2024-06-20 17:24:41,763 - __main__ - INFO - Polling запущен.
+2024-06-20 17:24:41,915 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/deleteWebhook "HTTP/1.1 200 OK"
+2024-06-20 17:24:42,649 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/getUpdates "HTTP/1.1 200 OK"
+2024-06-20 17:24:42,651 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2024-06-20 17:24:42,651 - telegram.ext.Application - INFO - Application.stop() complete
+2024-06-20 17:24:42,651 - __main__ - INFO - Бот остановлен.
+2024-06-20 17:26:34,512 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/setMyCommands "HTTP/1.1 200 OK"
+2024-06-20 17:26:34,662 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/getMe "HTTP/1.1 200 OK"
+2024-06-20 17:26:34,663 - __main__ - INFO - Бот запущен.
+2024-06-20 17:26:34,663 - telegram.ext.Application - INFO - Application started
+2024-06-20 17:26:34,663 - __main__ - INFO - Polling запущен.
+2024-06-20 17:26:34,820 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/deleteWebhook "HTTP/1.1 200 OK"
+2024-06-20 17:26:35,609 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot7112103187:AAFRB0oWUFfzXJgwKFDtxgmBpu07qu3e16k/getUpdates "HTTP/1.1 200 OK"
+2024-06-20 17:26:35,611 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2024-06-20 17:26:35,612 - telegram.ext.Application - INFO - Application.stop() complete
+2024-06-20 17:26:35,612 - __main__ - INFO - Бот остановлен.
